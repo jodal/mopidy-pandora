@@ -485,7 +485,7 @@ def test_browse_genre_category(config, get_genre_stations_return_value_mock):
         assert results[0].name == "Genre mock"
 
 
-def test_browse_genre_station_uri(  # noqa: PLR0913
+def test_browse_genre_station_uri(  # noqa: PLR0913, PLR0917
     config,
     get_station_mock_return_value,
     genre_station_mock,
