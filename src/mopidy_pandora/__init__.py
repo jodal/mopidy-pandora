@@ -14,7 +14,7 @@ class Extension(ext.Extension):
     ext_name = "pandora"
     version = __version__
 
-    def get_default_config(self):
+    def get_default_config(self) -> str:
         return config.read(pathlib.Path(__file__).parent / "ext.conf")
 
     def get_config_schema(self):
